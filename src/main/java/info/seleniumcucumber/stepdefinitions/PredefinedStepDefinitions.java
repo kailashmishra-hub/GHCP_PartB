@@ -442,6 +442,7 @@ public class PredefinedStepDefinitions implements BaseTest {
 		miscmethodObj.validateLocator(type);
 		clickObj.click(type, accessName);
 		click_forcefully(type, accessName);
+		System.out.println("I am on Elelemt page");
 	}
 	
 	//Forcefully click on element

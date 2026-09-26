@@ -153,6 +153,7 @@ public class NavigateMethods extends SelectElementByType implements BaseTest
     public void switchToOldWindow()
     {
     	driver.switchTo().window(old_win);
+		System.out.println("Switched to old window");
     }
     
     /** Method to switch to window by title
