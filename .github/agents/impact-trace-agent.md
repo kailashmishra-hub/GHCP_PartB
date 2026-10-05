@@ -17,7 +17,7 @@ Run the impact trace workflow in this exact order:
 1. Use the `git-diff-impact` skill.
 2. Verify `runtime/git-diff-report.txt` exists.
 3. Verify `runtime/git-outputs.txt` exists.
-4. Use the Knowledge Graph tracing skill with `TARGET_FEATURE_FOLDER`.
+4. Use `Knowledge_Graph_tracing_skill` with `TARGET_FEATURE_FOLDER`.
 5. Verify `runtime/impacts-facts.json` exists.
 
 Do not modify source files, run tests, commit, push, perform risk scoring, or select regression tests.
@@ -30,7 +30,7 @@ Git Diff Skill
 runtime/git-diff-report.txt
 runtime/git-outputs.txt
       ↓
-Knowledge Graph Tracing Skill
+Knowledge_Graph_tracing_skill
       ↓
 runtime/impacts-facts.json
 ```
