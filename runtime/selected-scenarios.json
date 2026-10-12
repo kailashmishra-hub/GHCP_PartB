@@ -1,0 +1,427 @@
+{
+  "summary": {
+    "total_scenarios_analyzed": 34,
+    "unique_scenarios_after_dedup": 34,
+    "selected_scenarios_count": 2,
+    "excluded_scenarios_count": 32,
+    "total_step_definitions_covered": 5
+  },
+  "selected_scenarios": [
+    {
+      "rank": 1,
+      "feature_name": "Wikipedia search",
+      "scenario_name": "Search for Selenium in English",
+      "feature_path": "src/test/resources/features/wikipedia_tests.feature",
+      "scenario_line": 13,
+      "tags": [],
+      "step_definitions": [
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#enter_text",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#check_element_presence",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#select_option_from_dropdown",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#click"
+      ],
+      "new_coverage_count": 4,
+      "cumulative_coverage_count": 4,
+      "trace_reason": "Covers 4 new step definitions (total coverage: 4 of 5). Greedy selection - highest uncovered coverage at iteration 1."
+    },
+    {
+      "rank": 2,
+      "feature_name": "Gmail Login",
+      "scenario_name": "I login with valid credential",
+      "feature_path": "src/test/resources/features/my_first.feature",
+      "scenario_line": 4,
+      "tags": [],
+      "step_definitions": [
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#enter_text",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#wait_for_ele_to_display",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#click"
+      ],
+      "new_coverage_count": 1,
+      "cumulative_coverage_count": 5,
+      "trace_reason": "Covers 1 new step definitions (total coverage: 5 of 5). Greedy selection - highest uncovered coverage at iteration 2."
+    }
+  ],
+  "excluded_scenarios": [
+    {
+      "feature_name": "Homerunner Login",
+      "scenario_name": "Access homepage",
+      "feature_path": "src/test/resources/Homerunner Login.feature",
+      "scenario_line": 4,
+      "step_definitions": [
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#check_element_presence",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#click"
+      ],
+      "trace_reason": "Redundant - all step definitions already covered by selected scenarios"
+    },
+    {
+      "feature_name": "Homerunner Login",
+      "scenario_name": "Fill homerunner form",
+      "feature_path": "src/test/resources/Homerunner Login.feature",
+      "scenario_line": 10,
+      "step_definitions": [
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#check_element_presence",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#click"
+      ],
+      "trace_reason": "Duplicate scenario"
+    },
+    {
+      "feature_name": "Gmail Login",
+      "scenario_name": "Try to navigate backwards",
+      "feature_path": "src/test/resources/features/my_first.feature",
+      "scenario_line": 11,
+      "step_definitions": [
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#check_element_presence",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#click"
+      ],
+      "trace_reason": "Duplicate scenario"
+    },
+    {
+      "feature_name": "Gmail Login",
+      "scenario_name": "Log back in",
+      "feature_path": "src/test/resources/features/my_first.feature",
+      "scenario_line": 16,
+      "step_definitions": [
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#enter_text",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#wait_for_ele_to_display",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#click"
+      ],
+      "trace_reason": "Duplicate scenario"
+    },
+    {
+      "feature_name": "Wikipedia search",
+      "scenario_name": "I select a language",
+      "feature_path": "src/test/resources/features/wikipedia_tests.feature",
+      "scenario_line": 4,
+      "step_definitions": [
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#enter_text",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#select_option_from_dropdown",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#click"
+      ],
+      "trace_reason": "Redundant - all step definitions already covered by selected scenarios"
+    },
+    {
+      "feature_name": "Wikipedia search",
+      "scenario_name": "Search for Java in English",
+      "feature_path": "src/test/resources/features/wikipedia_tests.feature",
+      "scenario_line": 22,
+      "step_definitions": [
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#enter_text",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#select_option_from_dropdown",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#click"
+      ],
+      "trace_reason": "Duplicate scenario"
+    },
+    {
+      "feature_name": "Wikipedia search",
+      "scenario_name": "Search for Python in English",
+      "feature_path": "src/test/resources/features/wikipedia_tests.feature",
+      "scenario_line": 31,
+      "step_definitions": [
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#enter_text",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#select_option_from_dropdown",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#click"
+      ],
+      "trace_reason": "Duplicate scenario"
+    },
+    {
+      "feature_name": "Wikipedia search",
+      "scenario_name": "Search for JavaScript in English",
+      "feature_path": "src/test/resources/features/wikipedia_tests.feature",
+      "scenario_line": 40,
+      "step_definitions": [
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#enter_text",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#select_option_from_dropdown",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#click"
+      ],
+      "trace_reason": "Duplicate scenario"
+    },
+    {
+      "feature_name": "Wikipedia search",
+      "scenario_name": "Search for Cucumber in English",
+      "feature_path": "src/test/resources/features/wikipedia_tests.feature",
+      "scenario_line": 49,
+      "step_definitions": [
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#enter_text",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#select_option_from_dropdown",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#click"
+      ],
+      "trace_reason": "Duplicate scenario"
+    },
+    {
+      "feature_name": "Wikipedia search",
+      "scenario_name": "Search for Software testing in English",
+      "feature_path": "src/test/resources/features/wikipedia_tests.feature",
+      "scenario_line": 58,
+      "step_definitions": [
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#enter_text",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#select_option_from_dropdown",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#click"
+      ],
+      "trace_reason": "Duplicate scenario"
+    },
+    {
+      "feature_name": "Wikipedia search",
+      "scenario_name": "Search for Machine learning in English",
+      "feature_path": "src/test/resources/features/wikipedia_tests.feature",
+      "scenario_line": 67,
+      "step_definitions": [
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#enter_text",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#select_option_from_dropdown",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#click"
+      ],
+      "trace_reason": "Duplicate scenario"
+    },
+    {
+      "feature_name": "Wikipedia search",
+      "scenario_name": "Search for Artificial intelligence in English",
+      "feature_path": "src/test/resources/features/wikipedia_tests.feature",
+      "scenario_line": 76,
+      "step_definitions": [
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#enter_text",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#select_option_from_dropdown",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#click"
+      ],
+      "trace_reason": "Duplicate scenario"
+    },
+    {
+      "feature_name": "Wikipedia search",
+      "scenario_name": "Search for Data science in English",
+      "feature_path": "src/test/resources/features/wikipedia_tests.feature",
+      "scenario_line": 85,
+      "step_definitions": [
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#enter_text",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#select_option_from_dropdown",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#click"
+      ],
+      "trace_reason": "Duplicate scenario"
+    },
+    {
+      "feature_name": "Wikipedia search",
+      "scenario_name": "Search for Linux in English",
+      "feature_path": "src/test/resources/features/wikipedia_tests.feature",
+      "scenario_line": 94,
+      "step_definitions": [
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#enter_text",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#select_option_from_dropdown",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#click"
+      ],
+      "trace_reason": "Duplicate scenario"
+    },
+    {
+      "feature_name": "Wikipedia search",
+      "scenario_name": "Search for GitHub in English",
+      "feature_path": "src/test/resources/features/wikipedia_tests.feature",
+      "scenario_line": 103,
+      "step_definitions": [
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#enter_text",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#select_option_from_dropdown",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#click"
+      ],
+      "trace_reason": "Duplicate scenario"
+    },
+    {
+      "feature_name": "Wikipedia search",
+      "scenario_name": "Search for Docker in English",
+      "feature_path": "src/test/resources/features/wikipedia_tests.feature",
+      "scenario_line": 112,
+      "step_definitions": [
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#enter_text",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#select_option_from_dropdown",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#click"
+      ],
+      "trace_reason": "Duplicate scenario"
+    },
+    {
+      "feature_name": "Wikipedia search",
+      "scenario_name": "Search for Kubernetes in English",
+      "feature_path": "src/test/resources/features/wikipedia_tests.feature",
+      "scenario_line": 121,
+      "step_definitions": [
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#enter_text",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#select_option_from_dropdown",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#click"
+      ],
+      "trace_reason": "Duplicate scenario"
+    },
+    {
+      "feature_name": "Wikipedia search",
+      "scenario_name": "Search for API in English",
+      "feature_path": "src/test/resources/features/wikipedia_tests.feature",
+      "scenario_line": 130,
+      "step_definitions": [
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#enter_text",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#select_option_from_dropdown",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#click"
+      ],
+      "trace_reason": "Duplicate scenario"
+    },
+    {
+      "feature_name": "Wikipedia search",
+      "scenario_name": "Search for DevOps in English",
+      "feature_path": "src/test/resources/features/wikipedia_tests.feature",
+      "scenario_line": 139,
+      "step_definitions": [
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#enter_text",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#select_option_from_dropdown",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#click"
+      ],
+      "trace_reason": "Duplicate scenario"
+    },
+    {
+      "feature_name": "Wikipedia search",
+      "scenario_name": "Search for Cloud computing in English",
+      "feature_path": "src/test/resources/features/wikipedia_tests.feature",
+      "scenario_line": 148,
+      "step_definitions": [
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#enter_text",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#select_option_from_dropdown",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#click"
+      ],
+      "trace_reason": "Duplicate scenario"
+    },
+    {
+      "feature_name": "Wikipedia search",
+      "scenario_name": "Search for Cybersecurity in English",
+      "feature_path": "src/test/resources/features/wikipedia_tests.feature",
+      "scenario_line": 157,
+      "step_definitions": [
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#enter_text",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#select_option_from_dropdown",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#click"
+      ],
+      "trace_reason": "Duplicate scenario"
+    },
+    {
+      "feature_name": "Wikipedia search",
+      "scenario_name": "Search for HTML in English",
+      "feature_path": "src/test/resources/features/wikipedia_tests.feature",
+      "scenario_line": 166,
+      "step_definitions": [
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#enter_text",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#select_option_from_dropdown",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#click"
+      ],
+      "trace_reason": "Duplicate scenario"
+    },
+    {
+      "feature_name": "Wikipedia search",
+      "scenario_name": "Search for CSS in English",
+      "feature_path": "src/test/resources/features/wikipedia_tests.feature",
+      "scenario_line": 175,
+      "step_definitions": [
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#enter_text",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#select_option_from_dropdown",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#click"
+      ],
+      "trace_reason": "Duplicate scenario"
+    },
+    {
+      "feature_name": "Wikipedia search",
+      "scenario_name": "Search for Wikipedia in English",
+      "feature_path": "src/test/resources/features/wikipedia_tests.feature",
+      "scenario_line": 184,
+      "step_definitions": [
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#enter_text",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#select_option_from_dropdown",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#click"
+      ],
+      "trace_reason": "Duplicate scenario"
+    },
+    {
+      "feature_name": "Wikipedia search",
+      "scenario_name": "Search for India in English",
+      "feature_path": "src/test/resources/features/wikipedia_tests.feature",
+      "scenario_line": 193,
+      "step_definitions": [
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#enter_text",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#select_option_from_dropdown",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#click"
+      ],
+      "trace_reason": "Duplicate scenario"
+    },
+    {
+      "feature_name": "Wikipedia search",
+      "scenario_name": "Search for Earth in English",
+      "feature_path": "src/test/resources/features/wikipedia_tests.feature",
+      "scenario_line": 202,
+      "step_definitions": [
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#enter_text",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#select_option_from_dropdown",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#click"
+      ],
+      "trace_reason": "Duplicate scenario"
+    },
+    {
+      "feature_name": "Wikipedia search",
+      "scenario_name": "Search for Programming in French",
+      "feature_path": "src/test/resources/features/wikipedia_tests.feature",
+      "scenario_line": 211,
+      "step_definitions": [
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#enter_text",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#select_option_from_dropdown",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#click"
+      ],
+      "trace_reason": "Duplicate scenario"
+    },
+    {
+      "feature_name": "Wikipedia search",
+      "scenario_name": "Search for Artificial intelligence in German",
+      "feature_path": "src/test/resources/features/wikipedia_tests.feature",
+      "scenario_line": 220,
+      "step_definitions": [
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#enter_text",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#select_option_from_dropdown",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#click"
+      ],
+      "trace_reason": "Duplicate scenario"
+    },
+    {
+      "feature_name": "Wikipedia search",
+      "scenario_name": "Search for Automation in Spanish",
+      "feature_path": "src/test/resources/features/wikipedia_tests.feature",
+      "scenario_line": 229,
+      "step_definitions": [
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#enter_text",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#select_option_from_dropdown",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#click"
+      ],
+      "trace_reason": "Duplicate scenario"
+    },
+    {
+      "feature_name": "Wikipedia search",
+      "scenario_name": "Search for Testing in Italian",
+      "feature_path": "src/test/resources/features/wikipedia_tests.feature",
+      "scenario_line": 238,
+      "step_definitions": [
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#enter_text",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#select_option_from_dropdown",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#click"
+      ],
+      "trace_reason": "Duplicate scenario"
+    },
+    {
+      "feature_name": "Wikipedia search",
+      "scenario_name": "Search for Software testing in Hebrew",
+      "feature_path": "src/test/resources/features/wikipedia_tests.feature",
+      "scenario_line": 247,
+      "step_definitions": [
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#enter_text",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#select_option_from_dropdown",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#click"
+      ],
+      "trace_reason": "Duplicate scenario"
+    },
+    {
+      "feature_name": "Wikipedia search",
+      "scenario_name": "Search for Automation in Arabic",
+      "feature_path": "src/test/resources/features/wikipedia_tests.feature",
+      "scenario_line": 256,
+      "step_definitions": [
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#enter_text",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#select_option_from_dropdown",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#click"
+      ],
+      "trace_reason": "Duplicate scenario"
+    }
+  ]
+}

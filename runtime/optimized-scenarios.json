@@ -1,0 +1,90 @@
+﻿{
+  "optimization_summary": {
+    "total_step_definitions_impacted": 5,
+    "optimized_scenario_count": 2,
+    "unique_scenarios": 34,
+    "coverage_percentage": 100,
+    "total_impacted_scenarios": 34
+  },
+  "all_step_definitions_covered": [
+    {
+      "covered_by_scenarios": [
+        6
+      ],
+      "coverage_status": "covered",
+      "step_definition": "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#check_element_presence"
+    },
+    {
+      "covered_by_scenarios": [
+        4,
+        6
+      ],
+      "coverage_status": "covered",
+      "step_definition": "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#click"
+    },
+    {
+      "covered_by_scenarios": [
+        4,
+        6
+      ],
+      "coverage_status": "covered",
+      "step_definition": "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#enter_text"
+    },
+    {
+      "covered_by_scenarios": [
+        6
+      ],
+      "coverage_status": "covered",
+      "step_definition": "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#select_option_from_dropdown"
+    },
+    {
+      "covered_by_scenarios": [
+        4
+      ],
+      "coverage_status": "covered",
+      "step_definition": "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#wait_for_ele_to_display"
+    }
+  ],
+  "optimization_details": {
+    "description": "Selects scenarios that cover the most uncovered step definitions iteratively",
+    "algorithm_used": "greedy_set_cover"
+  },
+  "optimized_scenarios": [
+    {
+      "rank": 1,
+      "scenario_line": 16,
+      "scenario_name": "Log back in",
+      "tags": [
+      ],
+      "feature_path": "src/test/resources/features/my_first.feature",
+      "step_definitions_covered": [
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#click",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#enter_text",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#wait_for_ele_to_display"
+      ],
+      "feature_name": "Gmail Login",
+      "coverage_contribution": 3
+    },
+    {
+      "rank": 2,
+      "scenario_line": 13,
+      "scenario_name": "Search for Selenium in English",
+      "tags": [
+      ],
+      "feature_path": "src/test/resources/features/wikipedia_tests.feature",
+      "step_definitions_covered": [
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#select_option_from_dropdown",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#enter_text",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#click",
+        "info.seleniumcucumber.stepdefinitions.PredefinedStepDefinitions#check_element_presence"
+      ],
+      "feature_name": "Wikipedia search",
+      "coverage_contribution": 4
+    }
+  ],
+  "deduplication_report": {
+    "total_duplicates_removed": 0,
+    "duplicate_groups": [
+    ]
+  }
+}
