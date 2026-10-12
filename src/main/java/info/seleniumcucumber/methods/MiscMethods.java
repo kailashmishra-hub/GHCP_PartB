@@ -16,6 +16,7 @@ public class MiscMethods
 	{
 		if(!valid_locator_type(type))
 			throw new Exception("Invalid locator type - "+type);
+		System.out.println("Valid locator type - "+type);
 	}
 	
 	// method to validate dropdown selector
