@@ -1,31 +1,30 @@
 # Cucumber Tracer Skill
-
-Trace changed Cucumber step definitions to the feature scenarios that use them.
-
+Description: Trace changed Cucumber step definitions and helper-method impacts to impacted feature scenarios inside a target feature folder.
 Also trace changes made inside methods called by a Cucumber step definition, including nested/helper methods, and trace those changes back to the Cucumber step definition and ultimately to the impacted feature scenarios.
 
-## Input
+## INPUT PARAMETERS
+TARGET_FEATURE_FOLDER:
+{MANDATORY}
 
-Read:
+TARGET_FEATURE_FOLDER="src/test/resources/features/STP"
 
-`runtime/git-diff-report.txt`
 
-This file contains the Cucumber step definitions and code changes identified by the Git Diff Skill.
-
-Example:
-
-```text
-Step definitions changed:
-- @Then("user should see all the booking IDs") -> userShouldSeeAllTheBookingIDS()
-- @When("user creates a booking") -> userCreatesABooking()
-```
+## CRITICAL EXECUTION RULES
+1. TARGET_FEATURE_FOLDER is always the scope of analysis.
+2. If TARGET_FEATURE_FOLDER is provided:
+- Do NOT ask for a folder name.
+- Do NOT ask which feature folder to analyze.
+- Do NOT ask for clarification.
+- Proceed directly with analysis.
+3. Scope is always: TARGET_FEATURE_FOLDER itself, plus every subfolder nested beneath it, at any depth. This is the one and only scanning rule.
+4. Scanning anything that is not {TARGET_FEATURE_FOLDER} or nested beneath it is never allowed.
+5. Read: `runtime/git-diff-report.txt`
+- This file contains the code changes identified by the Git Diff Skill.
 
 ## Task
-
 For every changed step definition or changed method:
-
 1. Extract its Cucumber annotation and expression when applicable.
-2. Find matching Cucumber steps in feature files under `src/test/resources`.
+2. Find matching Cucumber steps in feature files under `src/test/resources/features/{TARGET_FEATURE_FOLDER}`.
 3. Identify the scenario or scenario outline containing each matching step.
 4. If a changed step is in a `Background`, mark every scenario in that feature as impacted.
 5. If multiple changed step definitions affect the same scenario, create only one scenario entry and list all impacted steps under it.
@@ -34,7 +33,6 @@ For every changed step definition or changed method:
 8. Record changed step definitions that have no matching feature step under `unresolved_step_definitions`.
 9. If a changed method is called by a Cucumber step definition, trace the call chain back to that step definition and then to the feature scenarios using that step.
 10. Continue tracing through nested/helper methods. For example:
-
 ```java
 @And("I click save")
 public void saved() {
@@ -43,7 +41,6 @@ public void saved() {
 ```
 
 If `performfooter.ss()` or a method called by `ss()` is changed, trace:
-
 ```text
 Changed method
     ↑
@@ -57,12 +54,10 @@ Feature step
     ↑
 Scenario
 ```
-
 11. Trace all identifiable callers when a changed method is used by multiple methods or step definitions.
 12. Do not stop tracing simply because the changed code is not directly inside the Cucumber step-definition method.
 
 ## Matching
-
 Match Cucumber expressions accurately.
 
 Support:
@@ -137,7 +132,7 @@ When impact is discovered through an inner/helper method, include the call chain
 Example:
 
 ```json
-"call_chain": [
+"call_chain" : [
   "FooterSteps#saved",
   "performfooter#ss",
   "FooterActions#save"
