@@ -40,6 +40,11 @@ Go to your project directory from terminal and hit following commands
 * `mvn test "-Dbrowser=chrome" (to use any other browser)`
 * `mvn test "-Dcloud_config=saucelab_windows_chrome52" (to run test on cloud test platforms)`
 
+Impact workflow mapping
+-----------------------
+
+See [Impact workflow mapping](doc/impact-workflow-mapping.md) for the desired repository scanning and method-to-scenario trace format.
+
 Using canned tests in your project
 ----------------------------------
 
